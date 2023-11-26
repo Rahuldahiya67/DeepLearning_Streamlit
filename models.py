@@ -15,7 +15,7 @@ class PerceptronSentiment:
         df = pd.read_csv(r"IMDB_Dataset.csv")
 
         # Prepare data
-        sentences = df['review']
+        sentences = df['text']
         labels = df['sentiment'].map({'negative': 0, 'positive': 1})
         X_train, X_test, y_train, y_test = train_test_split(np.array(sentences), np.array(labels), train_size=0.8, random_state=42)
 
