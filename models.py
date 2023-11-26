@@ -12,7 +12,7 @@ from tensorflow.keras.callbacks import EarlyStopping
 class PerceptronSentiment:
     def __init__(self):
         # Load the dataset
-        df = pd.read_csv(IMDB_Dataset.csv)
+        df = pd.read_csv("data/IMDB_Dataset.csv")
 
         # Prepare data
         sentences = df['review']
@@ -64,7 +64,7 @@ class PerceptronSentiment:
 class BackpropagationSentiment:
     def __init__(self):
         # Load the dataset
-        df = pd.read_csv(IMDB_Dataset.csv)
+        df = pd.read_csv("data/IMDB_Dataset.csv")
 
         # Prepare data
         sentences = df['review']
@@ -117,7 +117,7 @@ class BackpropagationSentiment:
 class DNNSentiment:
     def __init__(self):
         # Load the dataset
-        df = pd.read_csv(IMDB_Dataset.csv)
+        df = pd.read_csv("data/IMDB_Dataset.csv")
 
         # Prepare data
         sentences = df['review']
@@ -170,7 +170,7 @@ class DNNSentiment:
 class RNNSentiment:
     def __init__(self):
         # Load the dataset
-        df = pd.read_csv(IMDB_Dataset.csv)
+        df = pd.read_csv("data/IMDB_Dataset.csv")
 
         # Prepare data
         sentences = df['review']
@@ -223,7 +223,7 @@ class RNNSentiment:
 class LSTMSentiment:
     def __init__(self):
         # Load the dataset
-        df = pd.read_csv(IMDB_Dataset.csv)
+        df = pd.read_csv("data/IMDB_Dataset.csv")
 
         # Prepare data
         sentences = df['review']
